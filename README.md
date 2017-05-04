@@ -1,6 +1,6 @@
 ## Add network interface labels for Kubernetes node
 
-CronJob which assignes network interface labels
+DaemonSet which assignes network interface labels
 
 Details: https://linux-mm.org/Drop_Caches
 
