@@ -1,0 +1,3 @@
+interval: 3600 # 1 hour
+interfaceRegexp: flannel.*?
+labelPrefix: network.interface

@@ -1,0 +1,8 @@
+name: K8sWorkerCritic
+version: 1.0.0
+description: Add interface labels to Kubernetes worker
+sources:
+  - https://github.com/dix-icomys/k8s-worker-critic
+maintainers:
+  - name: Eugene Lukin
+    email: dixnmail@gmail.com

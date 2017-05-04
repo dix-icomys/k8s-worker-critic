@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: k8s-worker-critic
+spec:
+  template:
+    metadata:
+      labels:
+        app: k8s-worker-critic
+      name: k8s-worker-critic-app
+    spec:
+      hostNetwork: true
+      containers:
+      - image: eugenelukin/k8s-worker-critic:latest
+        imagePullPolicy: Always
+        name: critic
+        command: ['critic', '--interval', '{{.Values.interval}}', '--interface_regexp', '{{.Values.interfaceRegexp}}', '--label_prefix', '{{.Values.labelPrefix}}']
