@@ -1,3 +1,5 @@
 interval: 3600 # 1 hour
 interfaceRegexp: flannel.*?
-labelPrefix: network.interface
+image: eugenelukin/k8s-worker-critic:v0.1.0
+region: us-west-2
+labelPrefix: node

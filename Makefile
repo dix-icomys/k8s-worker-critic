@@ -1,5 +1,5 @@
 GO=CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go
-TAG=latest
+TAG=v0.1.0
 BIN=critic
 BIN_PATH=build/$(BIN)
 IMAGE=eugenelukin/k8s-worker-critic

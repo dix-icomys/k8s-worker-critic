@@ -11,7 +11,10 @@ spec:
     spec:
       hostNetwork: true
       containers:
-      - image: eugenelukin/k8s-worker-critic:latest
+      - image: "{{.Values.image}}"
         imagePullPolicy: Always
         name: critic
+        env:
+        - name: AWS_REGION
+          value: "{{.Values.region}}"
         command: ['critic', '--interval', '{{.Values.interval}}', '--interface_regexp', '{{.Values.interfaceRegexp}}', '--label_prefix', '{{.Values.labelPrefix}}']

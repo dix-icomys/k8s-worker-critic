@@ -1,8 +1,9 @@
 ## Add network interface labels for Kubernetes node
 
-DaemonSet which assignes network interface labels
+Assignes:
 
-Details: https://linux-mm.org/Drop_Caches
+- EC2 Instance tags
+- network interface labels
 
 ### Usage
 
@@ -22,6 +23,7 @@ I have been influenced by the following great works:
 
 - labelgun: https://github.com/Vungle/labelgun
 - node-feature-discovery: https://github.com/kubernetes-incubator/node-feature-discovery
+- kube-state-metrics: https://github.com/kubernetes/kube-state-metrics
 
 ### Build
 
